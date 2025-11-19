@@ -1,0 +1,151 @@
+body {
+  font-family: Roboto, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.undertekst {
+  margin-bottom: 0px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  /*
+  display: flex;
+  align-items: center;
+  */
+}
+
+th {
+  background-color: #f8f9fa;
+}
+
+.pris-cell {
+  white-space: nowrap;
+}
+
+.ingen-data {
+  color: #666;
+  font-style: italic;
+}
+
+#loading {
+  margin-top: 20px;
+}
+
+/* Legg til disse stilene */
+.sok-seksjon {
+  margin-bottom: 20px;
+}
+
+#sokefelt {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #3498db;
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+#sokefelt:focus {
+  outline: none;
+  border-color: #2980b9;
+}
+
+td img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+h1 {
+  text-align: center;
+  font-size: min(100px, 9vw);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: min(40px, 8vw);
+  opacity: 40%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+/* Legg til denne media queryen nederst i CSS-filen */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Plasser elementer vertikalt */
+    gap: 20px; /* Legg til luft mellom seksjonene */
+  }
+
+  .section {
+    width: 100%; /* Fyll hele bredden på mobil */
+  }
+
+  /* Valgfritt: Juster søkefeltet for mobil */
+  #sokefelt {
+    width: 100%;
+  }
+}
+
+button {
+  padding: 15px 20px;
+  border: 2px solid #3498db;
+  outline: none;
+  background-color: #f8f9fa;
+  color: #151515;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+a {
+  color: #2980b9;
+}
+
+.copy {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer; /* Viser at det er klikkbart */
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.copy:hover {
+  opacity: 1; /* Effekt ved hover */
+}
