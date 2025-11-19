@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Skogliv priskatalog</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="Se priser på skogliv." />
+    <meta name="author" content="Xenomatter" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Skog priskatalog" />
+    <meta property="og:description" content="En katalog for å se priser på produkter på den norske minecraftserveren Skogliv." />
+    <meta property="og:url" content="https://xenomatter.github.io/priskatalog/" />
+    <meta property="og:image" content="https://xenomatter.github.io/priskatalog/images/preview.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#3498db" />
+  </head>
+  <body>
+    <h1>Skogliv priskatalog</h1>
+    <h3>En katalog for å se priser på produkter på Skogliv</h3>
+
+    <div class="container">
+      <div>
+        <button id="oppdaterPriser">Oppdater priser</button>
+        <p class="undertekst">Følgene produkter er ikke i databasen:</p>
+        <ul>
+          <li>Enchantment bøker</li>
+          <li>Armor og utstyr som ikke er maxet ut</li>
+          <li>Potions</li>
+          <li>Bee nest som ikke har bier</li>
+          <li>Andre ting som har NBT data</li>
+        </ul>
+
+        <div class="sok-seksjon">
+          <input type="text" id="sokefelt" placeholder="Søk etter produkt..." />
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Noe er galt / jeg vil legge til noe butikk</h2>
+        Om du har lyst at jeg skal legge til din butikk, så kan du sende en melding til meg under! Også hvis det er noe galt med en butikk, eller jeg glemte å legge til et produkt.
+        <ul>
+          <li><a href="https://github.com/Xenomatter/priskatalog/issues">Github issue</a> (Tar raskere tid)</li>
+          <li>Discord DM: <b>_Cheese7856</b></li>
+          <li>Epost: <a href="mailto:elander.olsen@gmail.com">elander.olsen@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="loading">Laster data...</div>
+    <table id="prisTabel" style="display: none">
+      <thead>
+        <tr>
+          <th>Produkt</th>
+          <th>1. plass</th>
+          <th>2. plass</th>
+          <th>3. plass</th>
+        </tr>
+      </thead>
+      <tbody id="tabelBody">
+        <!--Fylles inn av src/script.js-->
+      </tbody>
+    </table>
+
+    <script src="src/script.js"></script>
+    <script src="src/copy.js"></script>
+  </body>
+</html>
