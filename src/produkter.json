@@ -2144,8 +2144,8 @@
     "Stack-size": 64,
     "name": "Prismarine",
     "Butikker": [
+      { "butikk": "Marked", "pris": 30, "mengde": 32 },
       { "butikk": "Ida", "pris": 20, "mengde": 16 },
-      { "butikk": "TordenShop", "pris": 40, "mengde": 32 },
       { "butikk": "Juxielle", "pris": 25, "mengde": 16 }
     ]
   },
@@ -2872,7 +2872,7 @@
     "Stack-size": 64,
     "name": "Diamond",
     "Butikker": [
-      { "butikk": "Axolotl", "pris": 25, "mengde": 1 },
+      { "butikk": "Axolotl", "pris": 35, "mengde": 1 },
       { "butikk": "Tbshop", "pris": 38, "mengde": 1 },
       { "butikk": "Bukalu", "pris": 40, "mengde": 1 }
     ]
@@ -4208,9 +4208,9 @@
     "Stack-size": 64,
     "name": "Shulker Shell",
     "Butikker": [
+      { "butikk": "Marked", "pris": 849, "mengde": 2 },
       { "butikk": "HonniKorn", "pris": 600, "mengde": 1 },
-      { "butikk": "Butikken", "pris": 750, "mengde": 1 },
-      { "butikk": "B", "pris": 800, "mengde": 1 }
+      { "butikk": "Butikken", "pris": 750, "mengde": 1 }
     ]
   },
   {
